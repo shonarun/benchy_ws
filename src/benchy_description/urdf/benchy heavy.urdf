@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<robot name="benchy">
+  <link name="base_footprint"/>
+
+  <joint name="base_joint" type="fixed">
+    <parent link="base_footprint"/>
+    <child link="base_link"/>
+  </joint>
+
+  <link name="base_link">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 1.574"/>
+      <geometry>
+        <mesh filename="package://benchy_description/meshes/benchy.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+      <material name="nuclear_red">
+        <color rgba="1.0 0.15 0.15 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 1.574"/>
+      <geometry>
+        <mesh filename="package://benchy_description/meshes/benchy.stl" scale="0.1 0.1 0.1"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.5"/>
+      <origin xyz="0 0 0" rpy="0 0 1.574"/>
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.01"/>
+    </inertial>
+  </link>
+</robot>
