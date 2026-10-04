@@ -6,7 +6,7 @@ A ROS 2 (Jazzy) and Gazebo (Harmonic) simulation package for the classic 3D-prin
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/shonarun/benchy_ws.git](https://github.com/shonarun/benchy_ws.git)
+git clone https://github.com/shonarun/benchy_ws.git
 cd benchy_ws
 ```
 
